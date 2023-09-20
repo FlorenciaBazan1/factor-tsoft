@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factor Tsoft</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+      <header class="hearder">
+        <div class="header-content container">
+          <div class="header-text"><br/>
+            <h1> Casos Referencia</h1><hr>
+            <p>
+              EXPLORACIÓN DEL SERVICIO O PROYECTO
+            </p><hr>
+            <p>
+              INFORMACIÓN INTERNA
+            </p>
+            <p>
+              Datos del Proyecto o servicio. 
+            </p>
+            <p>
+              Segmentación: Gerencia/s. País. Industria. Cliente. Contacto. Equipo. Fecha inicio/fin. Estado.
+              Tipo de segmento de cliente (C1).
+            </p>
+            <p>
+              Fuente principal de información: CRM
+            </p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <article>
+          <p> Hola, Florencia. Cuando envíe este formulario, el propietario verá su nombre y dirección de correo electrónico.</p>
+          <hr>
+          <section>
+            <label for="clientes"> ID_Cliente: </label>
+              <select id="clientes" onchange="mostrarServicios()">
+                <option disabled selected=""> Seleccione el ID del cliente </option>
+                <option value="cliente1"> C0001 </option>
+                <option value="cliente2"> C0002 </option>
+                <option value="cliente3"> C0003 </option>
+                <option value="cliente4"> C0004 </option>
+              </select><br/>
+            <hr>
+            <p> INFORMACIÓN INTERNA </p>
+              <div id="clienteInfo"></div>
+              <div id="servicioInfo"></div>
+              <div id="liderInfo"></div>
+              <div id="estadoInfo"></div>
+              <div id="fechaFinInfo"></div>
+                           
+          </section><br/>
+        </article><br/>
+      
+      <hr>
+      <form id="miFormulario">
+        <label for="pregunta1"> 1. Datos de información interna detallados</label><br/>
+        <input type="text" id="pregunta1" name="pregunta1"/><br/>
+        <br/>
+        <label for="pregunta2"> 2. ¿Qué segmento de cliente es?</label><br/>
+        <input type="text" id="pregunta2" name="pregunta2" /><br/>
+        <br/>
+        <label for="pregunta3"> 3. ¿Es un caso de referencia de qué gerencia? </label><br/>
+        <input type="text" id="pregunta3" name="pregunta3"/><br/>
+        <br/>
+        <label for="pregunta4"> 4. ¿Fué un proyecto híbrido? </label><br/>
+        <input type="text" id="pregunta4" name="pregunta4"/><br/>
+        </form><br/>
+
+        <a href="estrategia.html">
+          <button type="button" onclick="guardarDatos()"> Siguiente </button>
+        </a>
+    </main><br/>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
